@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Petar">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="0"/>
+
+    <FrameLayout
+        android:id="@+id/petar_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/textViewRecurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Inflar um recurso de imagem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textAlignment="center"/>
+    <ImageView
+        android:id="@+id/imageViewPetar"
+        android:layout_width="218dp"
+        android:layout_height="247dp"
+        android:layout_below="@id/textViewRecurso"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/petar"/>
+    <TextView
+        android:id="@+id/textViewImgRecursoXml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewPetar"
+        android:text="Inflar um recurso XML"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textAlignment="center"/>
+    <ImageView
+        android:id="@+id/imageViewPetarXml"
+        android:layout_width="218dp"
+        android:layout_height="247dp"
+        android:layout_below="@id/textViewImgRecursoXml"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@mipmap/ic_petar"/>
+    <ImageView
+        android:id="@+id/imageViewLogoXml"
+        android:layout_width="218dp"
+        android:layout_height="247dp"
+        android:layout_below="@id/imageViewPetarXml"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@mipmap/ic_logo"/>
+
+</RelativeLayout>

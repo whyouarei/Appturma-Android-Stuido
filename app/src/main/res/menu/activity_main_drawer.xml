@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+<!--        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" /> -->
+        <item
+            android:id="@+id/nav_principal"
+            android:icon="@drawable/ic_menu_principal"
+            android:title="@string/menu_principal" />
+        <item
+            android:id="@+id/nav_petar"
+            android:icon="@drawable/ic_menu_petar"
+            android:title="@string/menu_petar" />
+        <item
+            android:id="@+id/nav_receitas"
+            android:icon="@drawable/ic_baseline_food_bank_24"
+            android:title="@string/menu_receitas" />
+        <item
+            android:id="@+id/nav_change"
+            android:icon="@drawable/ic_baseline_vpn_key_24"
+            android:title="Alterar Minha Senha" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="Logout" />
+
+    </group>
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B7DA9D"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.principal.PrincipalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="0"
+        tools:ignore="MissingConstraints">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textViewPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Início"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReceitas"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/ic_menu_receitas"
+            android:layout_below="@id/textViewPrincipal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/textViewPrReceitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/btnReceitas"
+            android:layout_toRightOf="@+id/btnReceitas"
+            android:layout_below="@id/textViewPrincipal"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textColor="#3C5925"
+            android:textStyle="bold"
+            android:text="Receitas"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+        <Button
+            android:id="@+id/btnPetar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_menu_petar"
+            android:layout_below="@+id/btnReceitas"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/btnPetar"
+            android:layout_toRightOf="@+id/btnPetar"
+            android:layout_below="@id/textViewPrReceitas"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textColor="#3C5925"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Petar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+    </RelativeLayout>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

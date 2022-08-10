@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    tools:context="TrocaSenha">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewNomeCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textViewNomeUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewNomeCompleto"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textViewEmailUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewNomeUsuario"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/editTextSenhaAtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua senha atual"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewEmailUsuario"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/editTextNovaSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a nova senha"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextSenhaAtual"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
+        <EditText
+            android:id="@+id/editTextNovaSenhaValidar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirme a nova Senha"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/editTextNovaSenha"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:id="@+id/btnTroca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNovaSenhaValidar"
+            android:layout_marginLeft="253dp"
+            android:background="@drawable/botao_arredondado"
+            android:text="Troca"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNovaSenhaValidar"
+            android:background="@drawable/botao_arredondado"
+            android:layout_marginLeft="25dp"
+            android:text="Voltar"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

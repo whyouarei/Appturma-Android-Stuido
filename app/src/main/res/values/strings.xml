@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppTurma</string>
+    <string name="titulo">Bacalhau Ao Forno</string>
+    <string name="title_activity_base_menu">BaseMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Yuri Barbosa</string>
+    <string name="nav_header_subtitle">whyuarei@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_petar">Petar</string>
+    <string name="menu_receitas">Receitas</string>
+    <string name="menu_principal">Principal</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_notifica">Notificações</string>
+    <string name="menu_main">Main</string>
+</resources>
